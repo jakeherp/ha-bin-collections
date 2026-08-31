@@ -12,7 +12,7 @@ from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.event import async_track_point_in_time
 from homeassistant.util import dt as dt_util
 
-from .const import BIN_TYPES, DOMAIN
+from .const import BIN_TYPES, DOMAIN, IMAGES_URL_PATH
 
 
 def calculate_next_collection(anchor: date, frequency_days: int, today: date) -> date:
@@ -49,6 +49,7 @@ class BinCollectionSensor(SensorEntity):
         self._bin_info = bin_info
         self._attr_name = bin_info["name"]
         self._attr_icon = bin_info["icon"]
+        self._attr_entity_picture = f"{IMAGES_URL_PATH}/{bin_info['image']}"
         self._attr_unique_id = f"{entry.entry_id}_{bin_key}"
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, entry.entry_id)},

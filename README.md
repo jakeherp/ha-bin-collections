@@ -47,6 +47,14 @@ This creates four sensors, one per bin:
 Each sensor's state is the next collection date, with `bin_color`,
 `frequency_days`, and `days_until_collection` attributes.
 
+## Bin pictures
+
+Each sensor also exposes an `entity_picture` — a photo of the actual bin —
+served directly by the integration, so cards like **Entities**, **Glance**,
+and **Picture Entity** show the real bin instead of a generic mdi icon.
+See `custom_components/bin_collections/images/README.md` for the filenames
+to drop in.
+
 ## Customizing the schedule
 
 Since the schedule is hard-coded (there is no council API), edit the
