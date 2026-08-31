@@ -1,0 +1,12 @@
+{
+  "domain": "bin_collections",
+  "name": "Bin Collections",
+  "codeowners": ["@jakeherp"],
+  "config_flow": true,
+  "documentation": "https://github.com/jakeherp/ha-bin-collections",
+  "integration_type": "hub",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/jakeherp/ha-bin-collections/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

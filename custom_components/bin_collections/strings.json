@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bin Collections",
+        "description": "Set up bin collections with a hard-coded collection schedule. Edit `const.py` to match your own council's schedule."
+      }
+    },
+    "abort": {
+      "already_configured": "Bin Collections is already configured."
+    }
+  }
+}
